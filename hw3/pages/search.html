@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/flaticon.png" type="image/x-icon">
+  <title>Search</title>
+</head>
+
+<body>
+
+  <div>
+    <a href="../index.html">Home</a>
+    <a href="#">Search</a>
+    <a href="./registration.html">Registration</a>
+    <a href="./authorization.html">Sign In</a>
+  </div>
+
+  <div>
+    <h1>Car search</h1>
+    <p>Buy and sell safely</p>
+  </div>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <fieldset>
+
+      <legend>
+        <h3>Advanced search of cars</h3>
+      </legend>
+
+      <!-- Body type -->
+      <div>
+        <p><b>Body type auto</b></p>
+        <div>
+          <input id="wagon" type="checkbox" name="wagon">
+          <label for="wagon">Wagon</label>
+        </div>
+        <div>
+          <input id="sedan" type="checkbox" name="sedan">
+          <label for="sedan">Sedan</label>
+        </div>
+        <div>
+          <input id="hatchback" type="checkbox" name="hatchback">
+          <label for="hatchback">Hatchback</label>
+        </div>
+        <div>
+          <input id="coupe" type="checkbox" name="coupe">
+          <label for="coupe">Coupe</label>
+        </div>
+        <div>
+          <input id="cabriolet" type="checkbox" name="cabriolet">
+          <label for="cabriolet">Cabriolet</label>
+        </div>
+        <div>
+          <input id="crossover" type="checkbox" name="crossover">
+          <label for="crossover">Crossover</label>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Brand, model-->
+      <div>
+        <label for="brand-list"><b>Brand</b></label>
+        <select name="brand-list" id="brand-list">
+          <option selected disabled>Choose a brand</option>
+          <option>Audi</option>
+          <option>BMW</option>
+          <option>Reno</option>
+          <option>Nissan</option>
+          <option>Volvo</option>
+          <option>Suzuki</option>
+          <option>Mitsubishi</option>
+          <option>Honda</option>
+          <option>Hyundai</option>
+        </select>
+        <label for="model-list"><b>Model</b></label>
+        <select name="model-list" id="model-list">
+          <option selected disabled>Choose a model</option>
+          <option>X1</option>
+          <option>X3</option>
+          <option>X5</option>
+          <option>X5 M</option>
+          <option>X6</option>
+          <option>520</option>
+          <option>528</option>
+          <option>535</option>
+          <option>X7</option>
+          <option>iX3</option>
+          <option>iX</option>
+        </select>
+      </div>
+
+      <hr>
+
+      <!-- Country -->
+      <div>
+        <label for="country-list"><b>Producing country</b></label>
+        <select name="country-list" id="country-list">
+          <option selected disabled>Choose a country</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>Poland</option>
+          <option>Japan</option>
+          <option>Germany</option>
+          <option>Korea</option>
+          <option>France</option>
+          <option>China</option>
+          <option>Sweden</option>
+          <option>England</option>
+        </select>
+      </div>
+
+      <hr>
+
+      <!-- Cost -->
+      <div>
+        <p><b>Cost</b></p>
+        <label for="cost-from">From</label>
+        <input type="number" id="cost-from" name="cost-from" value="0" min="0" max="9999999" step="500">
+        <label for="cost-before">Before</label>
+        <input type="number" id="cost-before" name="cost-before" value="60000" min="0" max="9999999" step="500">
+        <select name="curency-list" id="money-list">
+          <option>$</option>
+          <option>₴</option>
+          <option>£</option>
+        </select>
+      </div>
+
+      <hr>
+
+      <!-- Year -->
+      <div>
+        <p><b>Year</b></p>
+        <label for="year-from-list">From</label>
+        <select name="year-from-list" id="year-from-list">
+          <option selected disabled>Choose a Year</option>
+          <option>2022</option>
+          <option>2021</option>
+          <option>2019</option>
+          <option>2018</option>
+          <option>2017</option>
+          <option>2016</option>
+          <option>2015</option>
+          <option>2014</option>
+          <option>2012</option>
+          <option>2011</option>
+          <option>2010</option>
+          <option>2009</option>
+          <option>2008</option>
+        </select>
+        <label for="year-before-list">Before</label>
+        <select name="year-before-list" id="year-before-list">
+          <option selected disabled>Choose a Year</option>
+          <option>2022</option>
+          <option>2021</option>
+          <option>2019</option>
+          <option>2018</option>
+          <option>2017</option>
+          <option>2016</option>
+          <option>2015</option>
+          <option>2014</option>
+          <option>2012</option>
+          <option>2011</option>
+          <option>2010</option>
+          <option>2009</option>
+          <option>2008</option>
+        </select>
+      </div>
+
+      <hr>
+
+      <!-- Car condition -->
+      <div>
+        <p><b>Car condition</b></p>
+        <div>
+          <input type="radio" name="condition" id="all-auto" value="all">
+          <label for="all-auto">All</label>
+        </div>
+        <div>
+          <input type="radio" name="condition" id="used-auto" value="used">
+          <label for="used-auto">Used</label>
+        </div>
+        <div>
+          <input type="radio" name="condition" id="new-auto" value="new">
+          <label for="new-auto">New</label>
+        </div>
+        <div>
+          <input type="radio" name="condition" id="under-the-fit" value="under-the-fit">
+          <label for="under-the-fit">Under the fit</label>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Specifications -->
+
+      <div>
+        <p><b>Specifications</b></p>
+        <!-- Fuel -->
+        <div>
+          <label for="fuel-type">Fuel</label>
+          <select name="fuel-type" id="fuel-type">
+            <option selected disabled>Type of fuel</option>
+            <option>Petrol</option>
+            <option>Diesel</option>
+            <option>Gas</option>
+            <option>Gas/Petrol</option>
+            <option>Hybrid</option>
+            <option>Electro</option>
+          </select>
+        </div>
+        <!-- Transmission -->
+        <div>
+          <label for="transmission-type">Transmission</label>
+          <select name="transmission-type" id="transmission-type">
+            <option selected disabled>Type of transmission</option>
+            <option>Manual/Mechanics</option>
+            <option>Machine</option>
+            <option>Tiptronic</option>
+            <option>Robot</option>
+            <option>Variator</option>
+          </select>
+        </div>
+
+        <hr>
+
+        <!-- Color v1 -->
+        <div>
+          <label for="car-color"><b>Color</b></label>
+          <input type="color" name="car-color" id="car-color">
+          <input id="color-metalic" type="checkbox" name="color-metalic">
+          <label for="color-metalic">Metalic</label>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <!-- Comfort -->
+      <div>
+        <p><b>Comfort</b></p>
+        <div>
+          <input id="salon" type="checkbox" name="salon">
+          <label for="salon">Leather interior</label>
+        </div>
+        <div>
+          <input id="board-computer" type="checkbox" name="board-computer">
+          <label for="board-computer">On-board computer</label>
+        </div>
+        <div>
+          <input id="climate-control" type="checkbox" name="climate-control">
+          <label for="climate-control">Climate control</label>
+        </div>
+        <div>
+          <input id="cruise-control" type="checkbox" name="cruise-control">
+          <label for="cruise-control">Cruise control</label>
+        </div>
+        <div>
+          <input id="luke" type="checkbox" name="luke">
+          <label for="luke">Luke</label>
+        </div>
+        <div>
+          <input id="parktronic" type="checkbox" name="parktronic">
+          <label for="parktronic">Parktronic</label>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Button: Search -->
+      <div>
+        <button type="reset">Clear filter</button>
+        <button type="submit">Sarch</button>
+      </div>
+
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
