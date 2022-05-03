@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>CSS lesson</title>
+</head>
+
+<body>
+  <h1>Справка о селекторах</h1>
+  <div>
+    <h2>Типы селекторов</h2>
+    <!--Tag name-->
+    <div class="block-style">
+      <span class="selector-type">По имени тега:</span>
+      <span class="selector-example">h1 {}, div {}, h1 {}, p {}, span {}, a {} и тд.</span>
+      <span><a href="#">В этом примере применен селектор для тега - a (фиолетовый текст в верхнем регистре и увеличили
+          начертание)</a></span>
+    </div>
+    <!--ID-->
+    <div class="block-style">
+      <span class="selector-type">По ID:</span>
+      <span class="selector-example">#unique {}</span>
+      <span id="example-selector-id">Пример оформления с помощью селектора ID - #example-selector-id.</span>
+    </div>
+    <!--Class name-->
+    <div class="block-style">
+      <span class="selector-type">По классу:</span>
+      <span class="selector-example">.classname {}</span>
+      <span class="example-selector-classname">К этому тексту применен селектор с названием класса
+        example-selector-classname (сделали цвет текста голбым и сделали желтую тень)</span>
+    </div>
+    <!--Several classes or multiply classes-->
+    <div class="block-style">
+      <span class="selector-type">По нескольким классам:</span>
+      <span class="selector-example">.classname1 {} .classname2 {} .classname3 {}</span>
+      <span class="highlight upper active">Применение к тексту трех классов: highlight (черны фон), upper
+        (верхний регистр), active (красный цвет)</span>
+    </div>
+    <!--Tag name + class-->
+    <div class="block-style">
+      <span class="selector-type">По тегу и классу:</span>
+      <span class="selector-example">span.classname {}</span>
+      <span class="highlight upper not-active">Оформили текст в желтый в теге span, в котором есть класс
+        not-active среди двух других классов</span>
+    </div>
+    <!--Tag name + class + id-->
+    <div class="block-style">
+      <span class="selector-type">По тегу, классу и ID</span>
+      <span class="selector-example">span.classname{}#id</span>
+      <span class="highlight upper not-active" id="text-disabled">Через span .classname #id поменяли текст на
+        перечеркнутый и серый</span>
+    </div>
+    <!--Селектор потомков-->
+    <div class="block-style">
+      <span class="selector-type">Селектор потомков:</span>
+      <span class="selector-example">div p</span>
+      <div>
+        <p>Цвет aqua примененен ко всем p</p>
+        <p>Цвет aqua примененен ко всем p</p>
+        <div>
+          <p>Цвет aqua примененен ко всем p</p>
+        </div>
+      </div>
+    </div>
+    <!--Селектор дочерних элементов-->
+    <div class="block-style">
+      <span class="selector-type">Селектор дочерних элементов:</span>
+      <span class="selector-example">div > a</span>
+      <div>
+        <a href="">Цвет aqua применен к первой ссылке</a>
+        <p>
+          <a href="">Вторая ссылка осталась без изменений</a>
+        </p>
+      </div>
+    </div>
+    <!--Смежные селекторы-->
+    <div class="block-style">
+      <span class="selector-type">Смежные селекторы:</span>
+      <span class="selector-example">span + strong</span>
+      <strong>Очень важный "элемент 1" выделен зеленым</strong>
+      <strong>Очень важный "элемент 2"</strong>
+      <strong>Очень важный "элемент 3"</strong>
+    </div>
+  </div>
+
+  <!--Примеры и веса-->
+  <h1>Примеры</h1>
+
+  <p class="selector-type">По тегу. Вес 1</p>
+  <pre>
+      pre {
+        color: red;
+      }   
+    </pre>
+
+  <p class="selector-type">По классу. Вес 10</p>
+  <a class="active" href="#">Ссылка</a>
+
+  <p class="selector-type">По ID. Вес 100</p>
+  <div id="active-section">Активная секция</div>
+
+  <p class="selector-type">По тегу, классу и ID. Вес 111</p>
+  <div class="highlight upper not-active" id="text-enabled">Странная секция</div>
+
+</body>
+
+</html>

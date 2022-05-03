@@ -1,0 +1,87 @@
+.block-style {
+    margin: 1% auto;
+}
+
+.selector-type {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.selector-example {
+    color: white;
+    background-color: blue;
+}
+
+a {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: blueviolet;
+}
+
+#example-selector-id {
+    color: aliceblue;
+    background-color: black;
+}
+
+.example-selector-classname {
+    font-size: larger;
+    color: blue;
+    text-shadow: 2px 2px #f9f100;
+    font-weight: 900;
+}
+
+.highlight {
+    background-color: black;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.active {
+    color: red;
+}
+
+/* Вес 10 */
+.not-active {
+    color: blue;
+}
+
+/* Вес 11 */
+span.not-active {
+    color: #f9f100;
+}
+
+span.not-active#text-disabled {
+    text-decoration: line-through;
+    color: gray;
+}
+
+div p {
+    color: aqua;
+}
+
+div > a {
+    color: aqua;
+}
+
+span + strong {
+    color: chartreuse;
+}
+
+/* Вес 1 */
+pre {
+    color: red;
+}
+
+/* Вес 100 */
+#active-section {
+    background-color: blueviolet;
+    color: white;
+}
+
+/* Вес 111 */
+div.not-active#text-enabled {
+    text-decoration: line-through;
+    color: gray;
+}
