@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2C2D33;
+}
+
+/* Header styles */
+
+.header {
+  background-image: url(../images/hero-image.png);
+  min-height: 100px;
+  padding: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+/* Logo */
+
+.logotype {
+  margin: auto;
+  flex-grow: 1;
+}
+
+.logo-image {
+  height: 2.4em;
+  width: 2.4em;
+}
+
+.logo-title {
+  font-family: 'Satisfy', cursive;
+  color: white;
+  font-size: 2.4em;
+  margin-left: 0.2em;
+}
+
+/* Navigation */
+
+.navbar {
+  flex-grow: 2;
+  margin: auto;
+}
+
+.link-nav {
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 24px;
+  font-size: 1em;
+  color: white;
+}
+
+/* Social networks */
+
+.social {
+  flex-grow: 1;
+  margin: auto;
+}
+
+.link-social {
+  font-size: 2em;
+  color: khaki;
+  margin: 0.2em;
+}
+
+/* Main styles */
+
+.container-main {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.main {
+  background-color: #2C2D33;
+  min-height: 100px;
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+/* Left side */
+
+.left {
+  min-height: 100px;
+  flex-basis: 250px;
+  order: -1;
+  background-color: #1E232C;
+  color: white;
+  padding: 2em;
+}
+
+/* Right side */
+
+.right {
+  min-height: 100px;
+  flex-basis: 150px;
+  background-color: #1E232C;
+  color: white;
+  padding: 2em;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #1E232C;
+  min-height: 100px;
+  margin-top: 1em;
+  color: white;
+  padding: 2em;
+}
+
+/* Card styles */
+
+.container-cards {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  background-color: #1E232C;
+  padding: 20px;
+  flex-basis: 312px;
+  flex-grow: 1;
+}
+
+.card-item-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.card-item-title {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  color: #F1FCFF;
+  padding: 16px 0px 16px 0px;
+}
+
+.card-item-description {
+  display: block;
+  color: #797F84;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card-item-price {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  color: #F1FCFF;
+  padding: 16px 0px 16px 0px;
+}
+
+.card-item-button {
+  padding: 8px 32px 8px 32px;
+  border-style: none;
+  background-color: #F4FEA4;
+  color: #1E232C;
+  font-size: 24px;
+}
