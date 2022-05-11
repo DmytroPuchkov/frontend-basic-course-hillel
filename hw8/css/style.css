@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  overflow: hidden;
+  border: 10px solid blueviolet;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+
+.item1 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: deeppink;
+  margin: 10px;
+}
+
+.item2 {
+  float: right;
+  width: 100px;
+  height: 100px;
+  background-color: deeppink;
+  margin: 10px;
+}
+
+.items-right {
+  float: right;
+}
+
+.item3 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: deeppink;
+  margin: 10px;
+}
+
+.item4 {
+  width: 100px;
+  height: 100px;
+  background-color: deeppink;
+  margin: 10px;
+  display: inline-block;
+}
+
+.items-left {
+  float: left;
+}
+
+.item5 {
+  width: 100px;
+  height: 100px;
+  background-color: deeppink;
+  margin: 10px;
+  display: inline-block;
+}
+
+.item6 {
+  width: 100px;
+  height: 100px;
+  background-color: deeppink;
+  margin: 10px;
+  display: inline-block;
+}
+
+.items-center {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 240px;
+}
+
+.item-large {
+  height: 220px;
+  width: 100px;
+  background-color: deeppink;
+  margin: 10px;
+  float: left;
+}
+
+.item7 {
+  width: 100px;
+  height: 100px;
+  background-color: deeppink;
+  margin: 10px;
+  float: left;
+}
+
+.items-right-last {
+  overflow: hidden;
+  margin-left: auto;
+  width: 240px;
+}
+
+.item-large-last {
+  height: 220px;
+  width: 100px;
+  background-color: deeppink;
+  margin: 10px;
+  float: left;
+}
+
+.item8 {
+  width: 100px;
+  height: 100px;
+  background-color: deeppink;
+  margin: 10px;
+  float: left;
+}
