@@ -1,0 +1,85 @@
+:root {
+  --color-header: black;
+  --color-navbar: darksalmon;
+  --color-footer: black;
+  --color-main: white;
+  --color-left-side: salmon;
+  --color-right-side: salmon;
+  --color-item: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #f4f73e;
+}
+
+.grid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 100px 50px 1fr 100px;
+  grid-template-areas:
+    "hd hd hd"
+    "lf nv rg"
+    "lf mn rg"
+    "ft ft ft";
+  gap: 1em;
+}
+
+.inner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.item {
+  min-height: 100px;
+  background-color: var(--color-item);
+  color: white;
+  padding: 1em;
+}
+
+.header {
+  background-color: var(--color-header);
+  grid-area: hd;
+}
+
+.navbar {
+  background-color: var(--color-navbar);
+  grid-area: nv;
+}
+
+.main {
+  background-color: var(--color-main);
+  grid-area: mn;
+}
+
+.left {
+  background-color: var(--color-left-side);
+  grid-area: lf;
+}
+
+.right {
+  background-color: var(--color-right-side);
+  grid-area: rg;
+}
+
+.footer {
+  background-color: var(--color-footer);
+  grid-area: ft;
+}
+
+@media (max-width: 900px) {
+  .inner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .inner-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
