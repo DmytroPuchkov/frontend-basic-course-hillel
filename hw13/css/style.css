@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px;
+  background-color: #000000;
+}
+
+.wrap {
+  margin-top: 300px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.logo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  font-size: 80px;
+}
+
+.cube {
+  margin: auto;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 20s infinite linear;
+}
+
+.cube > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  position: absolute;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  background-image: url(../image/space.jpg);
+}
+
+.logo {
+  transform: translateX(-110px) translateY(40px);
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.top {
+  transform: rotateX(-270deg) translateY(-100px);
+  transform-origin: top center;
+}
+
+.bottom {
+  transform: rotateX(270deg) translateY(100px);
+  transform-origin: bottom center;
+}
+
+.left {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: top left;
+}
+
+.right {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.wrap:hover .front{
+  transform: translateZ(200px);
+}
+
+.wrap:hover .back {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+
+.wrap:hover .right {
+  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.wrap:hover .left {
+  transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.wrap:hover .top {
+  transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.wrap:hover .bottom {
+  transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}
+
+.cube > div {
+  transition: transform 0.2s ease-in;
+}
+
+.logo, .ic1, .ic2, .ic3, .ic4, .ic5, .ic6 {
+  color: aqua;
+  animation: animate 3s ease-in-out infinite;
+}
+
+.ic1 {
+  animation-delay: 0.1s;
+}
+
+.ic2 {
+  animation-delay: 0.3s;
+}
+
+.ic3 {
+  animation-delay: 0.5s;
+}
+
+.ic4 {
+  animation-delay: 0.7s;
+}
+
+.ic5 {
+  animation-delay: 0.9s;
+}
+
+.ic6 {
+  animation-delay: 1.1s;
+}
+
+.logo {
+  animation-delay: 1.3s;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
