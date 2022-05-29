@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box ;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 50px;
+  max-width: 300px;
+}
+
+/* Buttons */
+
+.btn {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 0.75em 1em;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 3rem;
+  border: none;
+  color: white;
+  background-color: salmon;
+  outline: 2px solid darksalmon;
+  transition: box-shadow 1s ease, background-color 1s ease;
+}
+
+.btn:hover {
+  background-color: darksalmon;
+  box-shadow: 0 0 24px salmon;
+  outline: 2px solid salmon;
+}
+
+/* Check-box */
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  user-select: none;
+  align-items: center;
+}
+
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid indigo;
+  border-radius: 0.4em;
+  margin: 0.5em;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.custom-checkbox:checked + label::before {
+  background-color: indigo;
+  border-color: darkorchid;
+  background-image: url(../image/check-solid.svg);
+}
+
+.custom-checkbox:not(:disabled):active + label::before {
+  background-color: indigo;
+}
+
+.custom-checkbox:focus + label::before {
+  box-shadow: 0 0 0.2rem rgb(75, 0, 130, 0.5);
+}
+
+.custom-checkbox:focus:not(:checked) + label::before {
+  border-color: blue;
+}
+
+.custom-checkbox:-webkit-autofill {
+  -webkit-text-fill-color: #fa8072;
+}
+
+/* when input with disabled */
+.custom-checkbox:disabled + label::before {
+  border-color: rgb(75, 0, 130, 0.25);
+}
+
+/* Email */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem
+}
+
+.custom-email {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  border: 2px solid rgb(250, 128, 114, 0.25);
+  color: salmon;
+}
+
+.custom-email::placeholder {
+  color: rgb(255, 160, 122, 0.25);
+}
+
+.custom-email:focus {
+  border-color: transparent;
+  outline: none;
+  box-shadow: 0 0 16px rgb(250, 128, 114);
+}
+
+.input-group{
+  position: relative;
+}
+
+.custom-icon {
+ background-image: url(../image/envelope-solid.svg);
+ background-repeat: no-repeat;
+ background-position: 50% 50%;
+ background-size: contain;
+ display: block;
+ height: 100%;
+ width: 1.5rem;
+ position: absolute;
+ left: 1rem;  
+}
+
+.custom-email {
+  padding-left: 3rem;
+}
