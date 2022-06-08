@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box {
+  height: 100vh;
+  width: 100%;
+  background-color: #26292c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-svg {
+  width: 600px;
+  height: 600px;
+  background: #313438;
+  border: 2px solid #3e4246;
+  box-shadow: 0px 0px 16px rgba(36, 37, 38, 0.75);
+  border-radius: 600px;
+  stroke-width: 5px; 
+}
+
+.circle {
+  fill: #fa7f4c;
+  stroke: #f93229;
+}
+
+.square {
+  fill: #f5ffa6;
+  stroke: #a2cd46;
+}
+
+.rectanle {
+  stroke: #f5ffa6;
+  fill: #a2cd46;
+}
+
+.triangle {
+  fill: #faa824;
+  stroke: #f36905;
+}
+
+.ellipse {
+  fill: #A20847;
+  stroke: #E43C87;
+}
+
+.circle:hover {
+  stroke-width: 15px;
+  transition: 0.51s ease-in-out; 
+}
+
+.square:hover {
+  stroke: #f5ffa6;
+  fill: #a2cd46;
+  transition: 0.51s ease; 
+}
+
+.rectanle:hover {
+  height: 240px;
+  transition: 0.51s ease-out;
+}
+
+.triangle:hover {
+  stroke: #faa824;
+  fill: #f36905;
+}
+
+.ellipse:hover {
+  stroke: #A20847;
+  fill: #E43C87;
+  stroke-width: 0;
+  transition: 0.51s linear;
+}
